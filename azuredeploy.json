@@ -52,6 +52,9 @@
                      "inputs":{
                         "schema":{
                            "properties":{
+                              "AccessPackageAssignmentId":{
+                                 "type":"string"
+                              },
                               "AccessPackageAssignmentRequestId":{
                                  "type":"string"
                               },
@@ -152,7 +155,7 @@
                            {
                               "equals":[
                                  "[variables('catalogIdExpression')]",
-                                 "[parameters('catalogId')]"
+                                 "[trim(parameters('catalogId'))]"
                               ]
                            }
                         ]
@@ -183,7 +186,7 @@
                               },
                               {
                                  "name":"aud",
-                                 "value":"[parameters('resourceApplicationId')]"
+                                 "value":"[trim(parameters('resourceApplicationId'))]"
                               },
                               {
                                  "name":"azp",
