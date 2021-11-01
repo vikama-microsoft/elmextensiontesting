@@ -168,7 +168,7 @@
                     }
                   ]
                 },
-                "AzureADEntitlementManagementAuthPolicyV2": {
+                "AzureADEntitlementManagementAuthPolicyV2App": {
                   "type": "AAD",
                   "claims": [
                     {
