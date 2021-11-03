@@ -38,7 +38,7 @@
          "name":"[parameters('name')]",
          "location":"[parameters('location')]",
          "tags":{
-            "Purpose":"Entitlement Management"
+            "Purpose":"Azure AD Entitlement Management"
          },
          "properties":{
             "state":"Enabled",
