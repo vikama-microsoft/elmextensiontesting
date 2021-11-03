@@ -37,6 +37,9 @@
       "apiVersion": "2019-05-01",
       "name": "[parameters('name')]",
       "location": "[parameters('location')]",
+      "tags": {
+        "Purpose": "Entitlement Management",
+      },
       "properties": {
         "state": "Enabled",
         "definition": {
