@@ -1,5 +1,5 @@
 param([string] $objectId)
-$app = Get-AzureADServicePrincipal -ObjectId $objectId
+$app = Get-AzADServicePrincipal -ObjectId $objectId
 $output = $app.AppId
 Write-Output $output
 $DeploymentScriptOutputs = @{}
