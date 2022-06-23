@@ -1,5 +1,6 @@
 param([string] $objectId)
-$output = 'Hello {0}' -f $objectId
+$app = Get-AzADServicePrincipal -ObjectId $objectId
+$output = $app.AppId
 Write-Output $output
 $DeploymentScriptOutputs = @{}
-$DeploymentScriptOutputs['text'] = $output
+$DeploymentScriptOutputs['appId'] = $output
